@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nom de l'Événement</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="dist/output.css" rel="stylesheet">
 </head>
+
 <body class="bg-gray-50 text-gray-900 antialiased">
 
     <!-- Navbar -->
@@ -37,30 +38,53 @@
     </section>
 
     <!-- CTA / Bouton Stripe -->
-    <section class="py-12 bg-indigo-600 text-white">
+    <section class="py-12 bg-kratos-red text-white">
         <div class="container mx-auto px-4 text-center">
             <h3 class="text-2xl font-semibold mb-8">Prêt à nous rejoindre ?</h3>
-            <a href="VOTRE_LIEN_STRIPE" target="_blank" class="bg-white text-indigo-600 px-10 py-4 rounded-full font-bold text-xl hover:bg-gray-100 transition-colors shadow-lg inline-block">
+            <a href="VOTRE_LIEN_STRIPE" target="_blank" class="bg-white text-kratos-red px-10 py-4 rounded-full font-bold text-xl hover:bg-gray-100 transition-colors shadow-lg inline-block">
                 Réserver ma place
             </a>
         </div>
     </section>
 
     <!-- Description Section 2 / Infos Pratiques -->
-    <section class="py-16">
-        <div class="container mx-auto px-4 max-w-3xl">
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h4 class="font-bold text-xl mb-4">📍 Où ?</h4>
-                    <p class="text-gray-600">Nom de la salle<br>Adresse complète, Ville</p>
-                </div>
-                <div>
-                    <h4 class="font-bold text-xl mb-4">📅 Quand ?</h4>
-                    <p class="text-gray-600">Samedi 15 Juin<br>À partir de 19h00</p>
-                </div>
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+        <h2 class="text-3xl font-bold mb-12">Infos Pratiques</h2>
+        
+        <!-- Flex-col par défaut (mobile/tablette), flex-row sur PC (md:) -->
+        <div class="flex flex-col md:flex-row items-center md:items-start justify-center gap-12 md:gap-0">
+            
+            <!-- Bloc Lieu -->
+            <div class="flex-1 px-8">
+                <div class="text-3xl mb-4">📍</div>
+                <h4 class="font-bold text-xl mb-3  tracking-wide">Où ?</h4>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    Nom de la salle<br>
+                    123 Rue de l'Événement<br>
+                    75000 Paris
+                </p>
             </div>
+
+            <!-- Séparateur : visible uniquement sur PC (md:block) -->
+            <div class="hidden md:block w-px h-32 bg-gray-200"></div>
+            <!-- Séparateur : visible uniquement sur Mobile (md:hidden) -->
+            <div class="md:hidden w-16 h-px bg-gray-200"></div>
+
+            <!-- Bloc Date -->
+            <div class="flex-1 px-8">
+                <div class="text-3xl mb-4">📅</div>
+                <h4 class="font-bold text-xl mb-3 tracking-wide">Quand ?</h4>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    Samedi 15 Juin 2026<br>
+                    Ouverture des portes : 19h00<br>
+                    Début : 20h30
+                </p>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="py-8 border-t border-gray-200">

@@ -1,0 +1,12 @@
+{
+  "name": "projet-race",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/index.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.13",
+    "tailwindcss": "^4.2.4"
+  }
+}

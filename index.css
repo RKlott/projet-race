@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --color-kratos-red: #8b0000;
+  --color-ragnarok-dark: #1a1a1a;
+}
