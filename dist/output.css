@@ -35,6 +35,7 @@
     --font-weight-bold: 700;
     --tracking-wide: 0.025em;
     --leading-relaxed: 1.625;
+    --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -270,6 +271,12 @@
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
+  .w-\[70\%\] {
+    width: 70%;
+  }
+  .w-\[full\] {
+    width: full;
+  }
   .w-auto {
     width: auto;
   }
@@ -323,6 +330,9 @@
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -496,6 +506,21 @@
   .lg\:max-w-2xl {
     @media (width >= 64rem) {
       max-width: var(--container-2xl);
+    }
+  }
+  .lg\:max-w-\[70\%\] {
+    @media (width >= 64rem) {
+      max-width: 70%;
+    }
+  }
+  .lg\:max-w-\[xl\] {
+    @media (width >= 64rem) {
+      max-width: xl;
+    }
+  }
+  .lg\:max-w-xl {
+    @media (width >= 64rem) {
+      max-width: var(--container-xl);
     }
   }
 }
